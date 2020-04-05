@@ -46,7 +46,7 @@ class Form extends Component {
             floatingLabelText="Name"
             validate={required}
             ref={this.saveRef}
-            withRef
+            forwardRef
           />
         </div>
         <div>

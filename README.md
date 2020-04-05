@@ -117,14 +117,14 @@ componentWillMount() {
 }
 ```
 
-as long as you specified a `ref` and `withRef` on your `Field` component.
+as long as you specified a `ref` and `forwardRef` on your `Field` component.
 
 ```js
 render() {
   return (
     <form>
       ...
-      <Field name="username" component={TextField} withRef ref="firstField"/>
+      <Field name="username" component={TextField} forwardRef ref="firstField"/>
       ...
     </form>
   )
